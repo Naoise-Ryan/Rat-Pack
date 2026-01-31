@@ -14,6 +14,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include <vector>
 
 const sf::Color ULTRAMARINE{ 5, 55,242,255 }; // const colour
 
@@ -39,10 +40,13 @@ private:
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_jerseyFont;// font used by message
 
-	Player m_player;
-	Enemy m_enemy;
 	const static int MAX_RATS = 20;
-	Rat m_rats[MAX_RATS];
+	int m_numRats = MAX_RATS;
+	std::vector<Rat> m_rats;
+	int m_numPlayers = 1;
+	std::vector<Player> m_players;
+	int numEnemys = 1;
+	std::vector<Enemy> m_enemys;
 	
 	//sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen
 	//sf::Texture m_DELETElogoTexture;//  texture used for sfml logo
@@ -53,6 +57,11 @@ private:
 	bool m_DELETEexitGame; // control exiting game
 
 	Menu m_menu;
+
+	//Menu Sprite
+	sf::Texture m_gameBgTexture;
+	sf::Sprite m_gameBgSprite{ m_gameBgTexture };
+	sf::Vector2f m_gameBgPosition;
 };
 
 #pragma warning( pop ) 

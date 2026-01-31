@@ -1,3 +1,6 @@
 ﻿  Game.cpp
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(65,71): warning C4100: 'dt': unreferenced parameter
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(70,71): warning C4100: 'dt': unreferenced parameter
+  main.cpp
+C:\Rat-Pack\RatPack\RatPack\main.cpp(20,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe
