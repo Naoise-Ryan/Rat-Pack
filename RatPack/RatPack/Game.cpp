@@ -36,7 +36,6 @@ void Game::run()
 
 void Game::processEvents()
 {
-	
 	while (const std::optional newEvent = m_window.pollEvent())
 	{
 		if ( newEvent->is<sf::Event::Closed>()) // close window message 
@@ -99,7 +98,6 @@ void Game::setupTexts()
 	m_DELETEwelcomeMessage.setOutlineColor(sf::Color::Black);
 	m_DELETEwelcomeMessage.setFillColor(sf::Color::Red);
 	m_DELETEwelcomeMessage.setOutlineThickness(2.0f);
-
 }
 
 void Game::setupSprites()
