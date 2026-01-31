@@ -10,7 +10,8 @@ public:
 	Player() { loadAssets(); }
 	void loadAssets();
 
-	void move(const std::optional<sf::Event> t_event, double dt);
+	void rotationInput(const std::optional<sf::Event> t_event);
+	void move(double dt);
 
 	sf::Sprite getSprite() { return m_sprite; }
 

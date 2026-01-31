@@ -60,7 +60,7 @@ void Game::processKeys(const std::optional<sf::Event> t_event, double dt)
 		m_DELETEexitGame = true; 
 	}
 
-	m_player.move(t_event, dt);
+	m_player.rotationInput(t_event);
 }
 
 void Game::checkKeyboardState()
@@ -78,6 +78,8 @@ void Game::update(sf::Time t_deltaTime)
 	{
 		m_window.close();
 	}
+
+	m_player.move(t_deltaTime.asMilliseconds());
 
 	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
 

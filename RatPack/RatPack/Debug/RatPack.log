@@ -1,11 +1,11 @@
-﻿  Player.cpp
+﻿  Menu.cpp
 C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Player.cpp')
+  (compiling source file 'Menu.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
       see declaration of 'std::runtime_error'
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Rat-Pack\RatPack\RatPack\Player.cpp(17,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Rat-Pack\RatPack\RatPack\Player.cpp(18,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Menu.cpp(41,67): warning C4100: 'window': unreferenced parameter
+C:\Rat-Pack\RatPack\RatPack\Menu.cpp(41,37): warning C4100: 't_newEvent': unreferenced parameter
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

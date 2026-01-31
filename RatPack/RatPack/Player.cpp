@@ -12,14 +12,8 @@ void Player::loadAssets()
 	m_sprite.setPosition(m_pos);
 }
 
-void Player::move(const std::optional<sf::Event> t_event, double dt)
+void Player::rotationInput(const std::optional<sf::Event> t_event)
 {
-	float x = m_sprite.getPosition().x + std::cos(m_rotation.asRadians()) * m_speed * (dt / 1000);
-	float y = m_sprite.getPosition().y + std::sin(m_rotation.asRadians()) * m_speed * (dt / 1000);
-
-	m_pos.x = x;
-	m_pos.y = y;
-
 	const sf::Event::KeyPressed* newKeypress = t_event->getIf<sf::Event::KeyPressed>();
 	if (sf::Keyboard::Key::A == newKeypress->code || sf::Keyboard::Key::Right == newKeypress->code)
 	{
@@ -37,6 +31,15 @@ void Player::move(const std::optional<sf::Event> t_event, double dt)
 			m_rotation = sf::degrees(359.0f);
 		}
 	}
+}
+
+void Player::move(double dt)
+{
+	float x = m_sprite.getPosition().x + std::cos(m_rotation.asRadians()) * m_speed * (dt / 1000);
+	float y = m_sprite.getPosition().y + std::sin(m_rotation.asRadians()) * m_speed * (dt / 1000);
+
+	m_pos.x = x;
+	m_pos.y = y;
 
 	if (m_pos.x > screen.s_width)
 	{
