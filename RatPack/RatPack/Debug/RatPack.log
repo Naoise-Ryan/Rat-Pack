@@ -1,3 +1,21 @@
 ﻿  Game.cpp
 C:\Rat-Pack\RatPack\RatPack\Game.cpp(69,28): warning C4100: 't_deltaTime': unreferenced parameter
+  Player.cpp
+C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Player.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
+      see declaration of 'std::runtime_error'
+      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  Rat.cpp
+C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Rat.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
+      see declaration of 'std::runtime_error'
+      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  main.cpp
+  Generating Code...
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

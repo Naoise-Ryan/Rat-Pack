@@ -1,9 +1,7 @@
 #include "Game.h"
 #include <iostream>
 
-Game::Game() :
-	m_window{ sf::VideoMode{ sf::Vector2u{800U, 600U}, 32U }, "SFML Game 3.0" },
-	m_DELETEexitGame{false} //when true game will exit
+Game::Game() : m_window{ sf::VideoMode{ sf::Vector2u{800U, 600U}, 32U }, "SFML Game 3.0" }, m_DELETEexitGame{false} //when true game will exit
 {
 	setupTexts(); // load font 
 	setupSprites(); // load texture
@@ -56,6 +54,8 @@ void Game::processKeys(const std::optional<sf::Event> t_event)
 	{
 		m_DELETEexitGame = true; 
 	}
+
+	m_player.move(t_event);
 }
 
 void Game::checkKeyboardState()
@@ -79,15 +79,15 @@ void Game::render()
 {
 	m_window.clear(ULTRAMARINE);
 
-	m_window.draw(m_DELETElogoSprite);
-	m_window.draw(m_DELETEwelcomeMessage);
+	/*m_window.draw(m_DELETElogoSprite);
+	m_window.draw(m_DELETEwelcomeMessage);*/
 	
 	m_window.display();
 }
 
 void Game::setupTexts()
 {
-	if (!m_jerseyFont.openFromFile("ASSETS\\FONTS\\Jersey20-Regular.ttf"))
+	/*if (!m_jerseyFont.openFromFile("ASSETS\\FONTS\\Jersey20-Regular.ttf"))
 	{
 		std::cout << "problem loading arial black font" << std::endl;
 	}
@@ -97,26 +97,26 @@ void Game::setupTexts()
 	m_DELETEwelcomeMessage.setCharacterSize(96U);
 	m_DELETEwelcomeMessage.setOutlineColor(sf::Color::Black);
 	m_DELETEwelcomeMessage.setFillColor(sf::Color::Red);
-	m_DELETEwelcomeMessage.setOutlineThickness(2.0f);
+	m_DELETEwelcomeMessage.setOutlineThickness(2.0f);*/
 }
 
 void Game::setupSprites()
 {
-	if (!m_DELETElogoTexture.loadFromFile("ASSETS\\IMAGES\\SFML-LOGO.png"))
-	{
-		// simple error message if previous call fails
-		std::cout << "problem loading logo" << std::endl;
-	}
-	
-	m_DELETElogoSprite.setTexture(m_DELETElogoTexture,true);// to reset the dimensions of texture
-	m_DELETElogoSprite.setPosition(sf::Vector2f{ 150.0f, 50.0f });
+	//if (!m_DELETElogoTexture.loadFromFile("ASSETS\\IMAGES\\SFML-LOGO.png"))
+	//{
+	//	// simple error message if previous call fails
+	//	std::cout << "problem loading logo" << std::endl;
+	//}
+	//
+	//m_DELETElogoSprite.setTexture(m_DELETElogoTexture,true);// to reset the dimensions of texture
+	//m_DELETElogoSprite.setPosition(sf::Vector2f{ 150.0f, 50.0f });
 }
 
 void Game::setupAudio()
 {
-	if (!m_DELETEsoundBuffer.loadFromFile("ASSETS\\AUDIO\\beep.wav"))
-	{
-		std::cout << "Error loading beep sound" << std::endl;
-	}
-	m_DELETEsound.play(); // test sound
+	//if (!m_DELETEsoundBuffer.loadFromFile("ASSETS\\AUDIO\\beep.wav"))
+	//{
+	//	std::cout << "Error loading beep sound" << std::endl;
+	//}
+	//m_DELETEsound.play(); // test sound
 }

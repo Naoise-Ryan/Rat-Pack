@@ -6,6 +6,8 @@
 // C:\SFML - 3.0.0\include\SFML\System\Exception.hpp(41, 47) : 
 // warning C4275 : non dll - interface class 'std::runtime_error' used as base for dll - interface class 'sf::Exception'
 
+#include "Player.h"
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -32,13 +34,15 @@ private:
 	
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_jerseyFont;// font used by message
+
+	Player m_player;
 	
-	sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen
-	sf::Texture m_DELETElogoTexture;//  texture used for sfml logo
-	sf::Sprite m_DELETElogoSprite{ m_DELETElogoTexture }; // sprite used for sfml logo
-	
-	sf::SoundBuffer m_DELETEsoundBuffer; // buffer for beep sound
-	sf::Sound m_DELETEsound{ m_DELETEsoundBuffer }; // sound object to play
+	//sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen
+	//sf::Texture m_DELETElogoTexture;//  texture used for sfml logo
+	//sf::Sprite m_DELETElogoSprite{ m_DELETElogoTexture }; // sprite used for sfml logo
+	//
+	//sf::SoundBuffer m_DELETEsoundBuffer; // buffer for beep sound
+	//sf::Sound m_DELETEsound{ m_DELETEsoundBuffer }; // sound object to play
 	bool m_DELETEexitGame; // control exiting game
 };
 
