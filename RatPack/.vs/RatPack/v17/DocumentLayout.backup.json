@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Rat-Pack\\RatPack\\",
+  "WorkspaceRootPath": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Rat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Rat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\ScreenSize.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Rat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Rat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -50,15 +54,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "Menu.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Menu.cpp",
+              "RelativeDocumentMoniker": "RatPack\\Menu.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Menu.cpp",
+              "RelativeToolTip": "RatPack\\Menu.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-31T17:21:30.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.h",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.h",
               "RelativeDocumentMoniker": "RatPack\\Enemy.h",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.h",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.h",
               "RelativeToolTip": "RatPack\\Enemy.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -66,11 +83,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ScreenSize.h",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h",
               "RelativeDocumentMoniker": "RatPack\\ScreenSize.h",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h",
               "RelativeToolTip": "RatPack\\ScreenSize.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -78,11 +95,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.cpp",
               "RelativeDocumentMoniker": "RatPack\\Player.cpp",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.cpp",
               "RelativeToolTip": "RatPack\\Player.cpp",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -90,24 +107,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
               "RelativeDocumentMoniker": "RatPack\\Game.cpp",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
               "RelativeToolTip": "RatPack\\Game.cpp",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAD4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T09:54:46.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T09:54:46.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp",
               "RelativeDocumentMoniker": "RatPack\\Enemy.cpp",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp",
               "RelativeToolTip": "RatPack\\Enemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -115,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Rat.cpp",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp",
               "RelativeDocumentMoniker": "RatPack\\Rat.cpp",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp",
               "RelativeToolTip": "RatPack\\Rat.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -127,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.h",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.h",
               "RelativeDocumentMoniker": "RatPack\\Player.h",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.h",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Player.h",
               "RelativeToolTip": "RatPack\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -140,11 +156,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Rat.h",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.h",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.h",
               "RelativeDocumentMoniker": "RatPack\\Rat.h",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.h",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Rat.h",
               "RelativeToolTip": "RatPack\\Rat.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -152,11 +168,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Game.h",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.h",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.h",
               "RelativeDocumentMoniker": "RatPack\\Game.h",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.h",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\Game.h",
               "RelativeToolTip": "RatPack\\Game.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -164,15 +180,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\main.cpp",
               "RelativeDocumentMoniker": "RatPack\\main.cpp",
-              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\main.cpp",
+              "ToolTip": "C:\\Users\\gamejam\\Desktop\\Rat-Pack\\RatPack\\RatPack\\main.cpp",
               "RelativeToolTip": "RatPack\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T09:56:32.599Z"
+              "WhenOpened": "2026-01-31T09:56:32.599Z",
+              "EditorCaption": ""
             }
           ]
         }
