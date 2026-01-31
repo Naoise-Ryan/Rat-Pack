@@ -3,14 +3,14 @@
 Menu::Menu() {
 	menuActive = true;
 	//Size Dimensions
-	m_startButtonSize = { 250, 80 };
-	m_startButtonPosition = { 282, 425 };
+	m_startButtonSize = { 255, 120 };
+	m_startButtonPosition = { 282, 405 };
 
-	m_controlsButtonSize = { 200, 80 };
+	m_controlsButtonSize = { 220, 80 };
 	m_controlsButtonPosition = { 134, 586 };
 
-	m_exitButtonSize = { 200, 80 };
-	m_exitButtonPosition = { 426, 571 };
+	m_exitButtonSize = { 220, 80 };
+	m_exitButtonPosition = { 436, 581 };
 
 	m_menuBgPosition = { 0.0f, 0.0f };
 }
@@ -26,15 +26,15 @@ void Menu::closeMenu()
 void Menu::initialise()
 {
 	//Start Button
-	m_startButton.setFillColor(sf::Color::White);
+	m_startButton.setFillColor(sf::Color::Transparent);
 	m_startButton.setSize(m_startButtonSize);
 	m_startButton.setPosition(m_startButtonPosition);
 
-	m_controlButton.setFillColor(sf::Color::White);
+	m_controlButton.setFillColor(sf::Color::Transparent);
 	m_controlButton.setSize(m_controlsButtonSize);
 	m_controlButton.setPosition(m_controlsButtonPosition);
 
-	m_exitButton.setFillColor(sf::Color::White);
+	m_exitButton.setFillColor(sf::Color::Transparent);
 	m_exitButton.setSize(m_exitButtonSize);
 	m_exitButton.setPosition(m_exitButtonPosition);
 
