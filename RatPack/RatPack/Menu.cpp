@@ -13,8 +13,8 @@ Menu::Menu() {
 	m_exitButtonSize = { 220, 80 };
 	m_exitButtonPosition = { 436, 581 };
 
-	m_goBackButtonSize = { 100, 100 };
-	m_goBackButtonPosition = { 100, 100 };
+	m_goBackButtonSize = { 275, 115 };
+	m_goBackButtonPosition = { 18, 18 };
 
 	m_menuBgPosition = { 0.0f, 0.0f };
 }
@@ -44,7 +44,7 @@ void Menu::initialise()
 	m_exitButton.setSize(m_exitButtonSize);
 	m_exitButton.setPosition(m_exitButtonPosition);
 
-	m_goBackButton.setFillColor(sf::Color::Red);
+	m_goBackButton.setFillColor(sf::Color::Transparent);
 	m_goBackButton.setSize(m_goBackButtonSize);
 	m_goBackButton.setPosition(m_goBackButtonPosition);
 
