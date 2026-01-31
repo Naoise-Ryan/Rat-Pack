@@ -7,6 +7,7 @@
 // warning C4275 : non dll - interface class 'std::runtime_error' used as base for dll - interface class 'sf::Exception'
 
 #include "Player.h"
+#include "Menu.h"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -44,6 +45,8 @@ private:
 	//sf::SoundBuffer m_DELETEsoundBuffer; // buffer for beep sound
 	//sf::Sound m_DELETEsound{ m_DELETEsoundBuffer }; // sound object to play
 	bool m_DELETEexitGame; // control exiting game
+
+	Menu m_menu;
 };
 
 #pragma warning( pop ) 

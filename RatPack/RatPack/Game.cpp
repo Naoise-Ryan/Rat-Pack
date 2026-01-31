@@ -6,6 +6,8 @@ Game::Game() : m_window{ sf::VideoMode{ sf::Vector2u{800U, 600U}, 32U }, "SFML G
 	setupTexts(); // load font 
 	setupSprites(); // load texture
 	setupAudio(); // load sounds
+
+	m_menu.initialise();
 }
 
 Game::~Game()
@@ -81,7 +83,7 @@ void Game::render()
 
 	/*m_window.draw(m_DELETElogoSprite);
 	m_window.draw(m_DELETEwelcomeMessage);*/
-	
+	m_menu.render(m_window);
 	m_window.display();
 }
 
