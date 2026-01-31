@@ -45,9 +45,11 @@ void Game::processEvents(double dt)
 		{
 			m_DELETEexitGame = true;
 		}
-		if (newEvent->is<sf::Event::KeyPressed>()) //user pressed a key
-		{
-			processKeys(newEvent, dt);
+		if (!m_menu.isMenuActive()) {
+			if (newEvent->is<sf::Event::KeyPressed>()) //user pressed a key
+			{
+				processKeys(newEvent, dt);
+			}
 		}
 		if (newEvent->is<sf::Event::MouseButtonReleased>()) {
 			m_menu.checkIfPressed(m_window);
@@ -62,8 +64,9 @@ void Game::processKeys(const std::optional<sf::Event> t_event, double dt)
 	{
 		m_DELETEexitGame = true; 
 	}
-
-	m_player.rotationInput(t_event);
+	if (!m_menu.isMenuActive()) {
+		m_player.rotationInput(t_event);
+	}
 }
 
 void Game::checkKeyboardState()
@@ -85,6 +88,12 @@ void Game::update(sf::Time t_deltaTime)
 	m_player.move(t_deltaTime.asMilliseconds());
 
 	m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
+
+	if (!m_menu.isMenuActive()) {
+		m_player.move(t_deltaTime.asMilliseconds());
+	}
+	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
+>>>>>>> f996c8dc1f5df249fb679324cb5d0eba1e1c6b3c
 
 	/*for (int i = 0; i < MAX_RATS; i++)
 	{
@@ -109,6 +118,12 @@ void Game::render()
 
 	m_window.draw(m_player.getSprite());
 	m_window.draw(m_enemy.getSprite());
+
+	if (!m_menu.isMenuActive()) {
+		m_window.draw(m_player.getSprite());
+	}
+	/*m_window.draw(m_enemy.getSprite());
+>>>>>>> f996c8dc1f5df249fb679324cb5d0eba1e1c6b3c
 
 	/*for (int i = 0; i < MAX_RATS; i++)
 	{
