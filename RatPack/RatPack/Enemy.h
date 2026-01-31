@@ -4,13 +4,13 @@
 
 #include <math.h>
 
-class Player : Rat
+class Enemy : Rat
 {
 public:
-	Player() { loadAssets(); }
+	Enemy() { loadAssets(); }
 	void loadAssets();
 
-	void move(const std::optional<sf::Event> t_event, double dt);
+	void enemyMove(double dt) { move(dt); }
 
 	sf::Sprite getSprite() { return m_sprite; }
 

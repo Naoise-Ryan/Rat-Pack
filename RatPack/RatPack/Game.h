@@ -6,7 +6,9 @@
 // C:\SFML - 3.0.0\include\SFML\System\Exception.hpp(41, 47) : 
 // warning C4275 : non dll - interface class 'std::runtime_error' used as base for dll - interface class 'sf::Exception'
 
+#include "ScreenSize.h"
 #include "Player.h"
+#include "Enemy.h"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -21,8 +23,8 @@ public:
 	void run();
 
 private:
-	void processEvents();
-	void processKeys(const std::optional<sf::Event> t_event);
+	void processEvents(double dt);
+	void processKeys(const std::optional<sf::Event> t_event, double dt);
 	void checkKeyboardState();
 	void update(sf::Time t_deltaTime);
 	void render();
@@ -36,6 +38,9 @@ private:
 	sf::Font m_jerseyFont;// font used by message
 
 	Player m_player;
+	Enemy m_enemy;
+	const static int MAX_RATS = 20;
+	Rat m_rats[MAX_RATS];
 	
 	//sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen
 	//sf::Texture m_DELETElogoTexture;//  texture used for sfml logo

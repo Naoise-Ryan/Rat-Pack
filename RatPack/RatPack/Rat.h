@@ -1,16 +1,35 @@
 #pragma once
 
+#include "ScreenSize.h"
+
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
 class Rat
 {
 public:
-	Rat() {}
-	virtual void loadAssets() {}
+	Rat() { loadAssets(); }
+	void loadAssets() {}
 
-	virtual void move() {}
+	void move(double dt);
+	void rotate();
+
+	void becomePlayerRat();
+	void becomeEnemyRat();
+
+	sf::Sprite getSprite() { return m_sprite; }
 
 protected:
-	sf::Vector2f m_pos{200.0f, 200.0f};
+	ScreenSize screen;
+
+	sf::Vector2f m_pos{0.0f, 0.0f};
+	float m_speed{ 5.0f };
+
+	sf::Angle m_rotation{ sf::degrees(0.0f) };
+	float m_rotationTimer{ 150.0f };
+	bool m_rotating = false;
+	int m_rotationDir = 0;
+
+	sf::Texture m_Texture;
+	sf::Sprite m_sprite{ m_Texture };
 };
