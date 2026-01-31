@@ -6,10 +6,6 @@ static float const FPS{ 60.0f };
 
 Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_height }, 32 ), "RatPack", sf::Style::Default), m_DELETEexitGame{ false } //when true game will exit
 {
-	setupTexts(); // load font 
-	setupSprites(); // load texture
-	setupAudio(); // load sounds
-
 	for (int i = 0; i < MAX_RATS; i++)
 	{
 		m_rats[i].loadAssets();
@@ -119,6 +115,8 @@ void Game::update(sf::Time t_deltaTime)
 			{
 				if (m_players[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
 				{
+					//take rat away from rats
+					//add rat to players
 					m_numPlayers = m_numPlayers + 1;
 					break;
 				}
@@ -127,6 +125,8 @@ void Game::update(sf::Time t_deltaTime)
 			{
 				if (m_enemys[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
 				{
+					//take rat away from rats
+					//add rat to enemys
 					//m_rats.erase(i);
 					m_numEnemys = m_numEnemys + 1;
 					break;
@@ -163,40 +163,4 @@ void Game::render()
 	}
 
 	m_window.display();
-}
-
-void Game::setupTexts()
-{
-	/*if (!m_jerseyFont.openFromFile("ASSETS\\FONTS\\Jersey20-Regular.ttf"))
-	{
-		std::cout << "problem loading arial black font" << std::endl;
-	}
-	m_DELETEwelcomeMessage.setFont(m_jerseyFont);
-	m_DELETEwelcomeMessage.setString("SFML Game");
-	m_DELETEwelcomeMessage.setPosition(sf::Vector2f{ 205.0f, 240.0f });
-	m_DELETEwelcomeMessage.setCharacterSize(96U);
-	m_DELETEwelcomeMessage.setOutlineColor(sf::Color::Black);
-	m_DELETEwelcomeMessage.setFillColor(sf::Color::Red);
-	m_DELETEwelcomeMessage.setOutlineThickness(2.0f);*/
-}
-
-void Game::setupSprites()
-{
-	//if (!m_DELETElogoTexture.loadFromFile("ASSETS\\IMAGES\\SFML-LOGO.png"))
-	//{
-	//	 simple error message if previous call fails
-	//	std::cout << "problem loading logo" << std::endl;
-	//}
-	//
-	//m_DELETElogoSprite.setTexture(m_DELETElogoTexture,true);// to reset the dimensions of texture
-	//m_DELETElogoSprite.setPosition(sf::Vector2f{ 150.0f, 50.0f });
-}
-
-void Game::setupAudio()
-{
-	//if (!m_DELETEsoundBuffer.loadFromFile("ASSETS\\AUDIO\\beep.wav"))
-	//{
-	//	std::cout << "Error loading beep sound" << std::endl;
-	//}
-	//m_DELETEsound.play(); // test sound
 }

@@ -1,11 +1,14 @@
 ﻿  Game.cpp
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(71,71): warning C4100: 'dt': unreferenced parameter
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(118,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,12):
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(67,71): warning C4100: 'dt': unreferenced parameter
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,13): warning C4456: declaration of 'i' hides previous local declaration
+      C:\Rat-Pack\RatPack\RatPack\Game.cpp(110,12):
       see declaration of 'i'
   
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(126,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,12):
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(122,13): warning C4456: declaration of 'i' hides previous local declaration
+      C:\Rat-Pack\RatPack\RatPack\Game.cpp(110,12):
       see declaration of 'i'
   
+  main.cpp
+C:\Rat-Pack\RatPack\RatPack\main.cpp(20,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

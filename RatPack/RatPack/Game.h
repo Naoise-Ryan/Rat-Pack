@@ -48,12 +48,6 @@ private:
 	int m_numEnemys = 1;
 	std::vector<Enemy> m_enemys;
 	
-	//sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen
-	//sf::Texture m_DELETElogoTexture;//  texture used for sfml logo
-	//sf::Sprite m_DELETElogoSprite{ m_DELETElogoTexture }; // sprite used for sfml logo
-	//
-	//sf::SoundBuffer m_DELETEsoundBuffer; // buffer for beep sound
-	//sf::Sound m_DELETEsound{ m_DELETEsoundBuffer }; // sound object to play
 	bool m_DELETEexitGame; // control exiting game
 
 	Menu m_menu;
