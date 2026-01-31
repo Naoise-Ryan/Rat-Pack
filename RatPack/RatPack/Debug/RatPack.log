@@ -1,14 +1,4 @@
-﻿  Enemy.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Enemy.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-  Game.cpp
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(58,71): warning C4100: 'dt': unreferenced parameter
-  Menu.cpp
+﻿  Menu.cpp
 C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
   (compiling source file 'Menu.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
@@ -16,26 +6,4 @@ C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-i
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-  Player.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Player.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Player.cpp(38,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Player.cpp(39,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Rat.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Rat.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Rat.cpp(5,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Rat.cpp(6,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  main.cpp
-  Generating Code...
   RatPack.vcxproj -> C:\Users\gamejam\Desktop\Rat-Pack\RatPack\Debug\RatPack.exe
