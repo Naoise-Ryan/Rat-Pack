@@ -11,6 +11,11 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 	setupAudio(); // load sounds
 
 	m_menu.initialise();
+	if (!m_gameBgTexture.loadFromFile("ASSETS\\IMAGES\\game_bg_image.png")) {
+		std::cout << "Problem loading bg sprite" << std::endl;
+	}
+	m_gameBgSprite.setTexture(m_gameBgTexture, true);// to reset the dimensions of texture
+	m_gameBgSprite.setPosition(m_gameBgPosition);
 }
 
 Game::~Game()
@@ -117,6 +122,7 @@ void Game::render()
 	m_menu.render(m_window);
 
 	if (!m_menu.isMenuActive()) {
+		m_window.draw(m_gameBgSprite);
 		m_window.draw(m_player.getSprite());
 		m_window.draw(m_enemy.getSprite());
 

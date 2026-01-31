@@ -53,6 +53,11 @@ private:
 	bool m_DELETEexitGame; // control exiting game
 
 	Menu m_menu;
+
+	//Menu Sprite
+	sf::Texture m_gameBgTexture;
+	sf::Sprite m_gameBgSprite{ m_gameBgTexture };
+	sf::Vector2f m_gameBgPosition;
 };
 
 #pragma warning( pop ) 
