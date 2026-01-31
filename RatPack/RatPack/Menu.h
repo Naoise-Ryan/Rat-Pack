@@ -7,7 +7,7 @@ public:
 	void closeMenu();
 	void initialise();
 	void render(sf::RenderWindow& t_window);
-	void checkIfPressed(sf::Event t_newEvent, sf::RenderWindow& window);
+	void checkIfPressed(sf::RenderWindow& window);
 protected:
 private:
 	bool menuActive;

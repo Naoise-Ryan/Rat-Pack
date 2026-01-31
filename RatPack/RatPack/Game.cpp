@@ -46,6 +46,9 @@ void Game::processEvents()
 		{
 			processKeys(newEvent);
 		}
+		if (newEvent->is<sf::Event::MouseButtonReleased>()) {
+			m_menu.checkIfPressed(m_window);
+		}
 	}
 }
 
