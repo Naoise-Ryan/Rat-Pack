@@ -10,7 +10,7 @@ public:
 	Enemy() { loadAssets(); }
 	void loadAssets();
 
-	void enemyMove(double dt) { move(dt); }
+	void enemyUpdate(double dt) { Update(dt); }
 
 	sf::Sprite getSprite() { return m_sprite; }
 

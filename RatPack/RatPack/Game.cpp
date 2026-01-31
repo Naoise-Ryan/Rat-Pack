@@ -84,9 +84,9 @@ void Game::update(sf::Time t_deltaTime)
 
 	m_player.move(t_deltaTime.asMilliseconds());
 
-	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
+	m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
 
-	for (int i = 0; i < MAX_RATS; i++)
+	/*for (int i = 0; i < MAX_RATS; i++)
 	{
 		m_rats->move(t_deltaTime.asMilliseconds());
 
@@ -108,15 +108,12 @@ void Game::render()
 	m_menu.render(m_window);
 
 	m_window.draw(m_player.getSprite());
-	/*m_window.draw(m_enemy.getSprite());
+	m_window.draw(m_enemy.getSprite());
 
-	for (int i = 0; i < MAX_RATS; i++)
+	/*for (int i = 0; i < MAX_RATS; i++)
 	{
 		m_window.draw(m_rats[i].getSprite());
 	}*/
-	
-	/*m_window.draw(m_DELETElogoSprite);
-	m_window.draw(m_DELETEwelcomeMessage);*/
 
 	m_window.display();
 }

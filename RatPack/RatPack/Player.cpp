@@ -41,25 +41,10 @@ void Player::move(double dt)
 	m_pos.x = x;
 	m_pos.y = y;
 
-	if (m_pos.x > screen.s_width)
-	{
-		m_pos.x = screen.s_width;
-	}
-	else if (m_pos.x < 0)
-	{
-		m_pos.x = 0;
-	}
-	if (m_pos.y > screen.s_height)
-	{
-		m_pos.y = screen.s_height;
-	}
-	else if (m_pos.y < 0)
-	{
-		m_pos.y = 0;
-	}
+	boundaryCheck();
 
 	m_sprite.setPosition(m_pos);
 	m_sprite.setRotation(m_rotation);
 
-	std::cout << "x: " << m_pos.x << " y: " << m_pos.y << "\n";
+	//std::cout << "x: " << m_pos.x << " y: " << m_pos.y << "\n";
 }

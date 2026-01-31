@@ -1,5 +1,41 @@
 #include "Rat.h"
 
+Rat::Rat()
+{
+	loadAssets();
+
+	int startRotation = rand() % 360;
+	m_sprite.setRotation(sf::Angle(sf::degrees(startRotation)));
+
+	m_pos.x = rand() % screen.s_width;
+	m_pos.y = rand() % screen.s_height;
+}
+
+void Rat::Update(double dt)
+{
+	move(dt);
+	boundaryCheck();
+
+	if (m_timeOfRotation < 0)
+	{
+		m_rotating = false;
+		m_timeOfRotation = m_TIME_OF_ROTATION;
+	}
+
+	if (m_rotating)
+	{
+		rotate();
+	}
+
+	if (m_timeTillRotation < 0)
+	{
+		m_rotating = true;
+		m_timeTillRotation = m_TIME_TILL_ROTATION;
+	}
+
+	m_timeTillRotation--;
+}
+
 void Rat::move(double dt)
 {
 	float x = m_sprite.getPosition().x + std::cos(m_rotation.asRadians()) * m_speed * (dt / 1000);
@@ -8,46 +44,49 @@ void Rat::move(double dt)
 	m_pos.x = x;
 	m_pos.y = y;
 
-	if (m_rotationTimer < 0)
-	{
-		m_rotating = false;
-		m_rotationTimer = 500.0f;
-	}
+	m_sprite.setPosition(m_pos);
 
+	std::cout << "x: " << m_pos.x << " y: " << m_pos.y << "\n";
+}
+
+void Rat::boundaryCheck()
+{
 	if (m_pos.x > screen.s_width)
 	{
 		m_pos.x = screen.s_width;
-		m_rotating = true;
-		m_rotationDir = rand() % 2;
+		if (!m_rotating)
+		{
+			m_rotating = true;
+			m_rotationDir = rand() % 2;
+		}
 	}
 	else if (m_pos.x < 0)
 	{
 		m_pos.x = 0;
-		m_rotating = true;
-		m_rotationDir = rand() % 2;
+		if (!m_rotating)
+		{
+			m_rotating = true;
+			m_rotationDir = rand() % 2;
+		}
 	}
 	if (m_pos.y > screen.s_height)
 	{
 		m_pos.y = screen.s_height;
-		m_rotating = true;
-		m_rotationDir = rand() % 2;
+		if (!m_rotating)
+		{
+			m_rotating = true;
+			m_rotationDir = rand() % 2;
+		}
 	}
 	else if (m_pos.y < 0)
 	{
 		m_pos.y = 0;
-		m_rotating = true;
-		m_rotationDir = rand() % 2;
+		if (!m_rotating)
+		{
+			m_rotating = true;
+			m_rotationDir = rand() % 2;
+		}
 	}
-
-	if (m_rotating)
-	{
-		rotate();
-	}
-
-	m_sprite.setPosition(m_pos);
-	m_sprite.setRotation(m_rotation);
-
-	std::cout << "x: " << m_pos.x << " y: " << m_pos.y << "\n";
 }
 
 void Rat::rotate()
@@ -69,7 +108,8 @@ void Rat::rotate()
 		}
 	}
 
-	m_rotationTimer--;
+	m_timeOfRotation--;
+	m_sprite.setRotation(m_rotation);
 }
 
 void Rat::becomePlayerRat()
