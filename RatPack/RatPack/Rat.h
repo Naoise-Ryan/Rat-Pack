@@ -16,9 +16,6 @@ public:
 	void boundaryCheck();
 	void rotate();
 
-	void becomePlayerRat();
-	void becomeEnemyRat();
-
 	sf::Sprite getSprite() { return m_sprite; }
 
 protected:

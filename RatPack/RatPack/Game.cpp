@@ -16,6 +16,7 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 	}
 
 	m_menu.initialise();
+
 	if (!m_gameBgTexture.loadFromFile("ASSETS\\IMAGES\\game_bg_image.png")) {
 		std::cout << "Problem loading bg sprite" << std::endl;
 	}
@@ -75,7 +76,10 @@ void Game::processKeys(const std::optional<sf::Event> t_event, double dt)
 		m_DELETEexitGame = true; 
 	}
 	if (!m_menu.isMenuActive()) {
-		m_player.rotationInput(t_event);
+		for (int i = 0; i < m_numPlayers; i++)
+		{
+			m_players[i].rotationInput(t_event);
+		}
 	}
 }
 
@@ -97,23 +101,34 @@ void Game::update(sf::Time t_deltaTime)
 
 	if (!m_menu.isMenuActive()) 
 	{
-		m_player.move(t_deltaTime.asMilliseconds());
+		for (int i = 0; i < m_numPlayers; i++)
+		{
+			m_players[i].move(t_deltaTime.asMilliseconds());
+		}
 
-		m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
-
-		m_player.move(t_deltaTime.asMilliseconds());
+		for (int i = 0; i < m_numEnemys; i++)
+		{
+			m_enemys[i].enemyUpdate(t_deltaTime.asMilliseconds());
+		}
 
 		for (int i = 0; i < MAX_RATS; i++)
 		{
 			m_rats[i].Update(t_deltaTime.asMilliseconds());
 
-			if (m_player.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+			for (int i = 0; i < m_numPlayers; i++)
 			{
-				m_rats[i].becomePlayerRat();
+				if (m_players[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+				{
+					m_numPlayers = m_numPlayers + 1;
+				}
 			}
-			else if (m_enemy.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+			for (int i = 0; i < m_numEnemys; i++)
 			{
-				m_rats[i].becomeEnemyRat();
+				if (m_enemys[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+				{
+					//m_rats.erase(i);
+					m_numEnemys = m_numEnemys + 1;
+				}
 			}
 		}
 	}
@@ -134,8 +149,15 @@ void Game::render()
 			m_window.draw(m_rats[i].getSprite());
 		}
 
-		m_window.draw(m_enemy.getSprite());
-		m_window.draw(m_player.getSprite());
+		for (int i = 0; i < m_numEnemys; i++)
+		{
+			m_window.draw(m_enemys[i].getSprite());
+		}
+
+		for (int i = 0; i < m_numPlayers; i++)
+		{
+			m_window.draw(m_players[i].getSprite());
+		}
 	}
 
 	m_window.display();

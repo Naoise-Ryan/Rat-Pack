@@ -45,7 +45,7 @@ private:
 	std::vector<Rat> m_rats;
 	int m_numPlayers = 1;
 	std::vector<Player> m_players;
-	int numEnemys = 1;
+	int m_numEnemys = 1;
 	std::vector<Enemy> m_enemys;
 	
 	//sf::Text m_DELETEwelcomeMessage{ m_jerseyFont }; // text used for message on screen

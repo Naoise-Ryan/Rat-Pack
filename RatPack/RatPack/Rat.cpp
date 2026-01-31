@@ -129,11 +129,3 @@ void Rat::rotate()
 	m_timeOfRotation--;
 	m_sprite.setRotation(m_rotation);
 }
-
-void Rat::becomePlayerRat()
-{
-}
-
-void Rat::becomeEnemyRat()
-{
-}
