@@ -1,6 +1,4 @@
-﻿  Game.cpp
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(69,28): warning C4100: 't_deltaTime': unreferenced parameter
-  Player.cpp
+﻿  Player.cpp
 C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
   (compiling source file 'Player.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
@@ -8,14 +6,6 @@ C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-i
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-  Rat.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Rat.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-  main.cpp
-  Generating Code...
+C:\Rat-Pack\RatPack\RatPack\Player.cpp(17,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Player.cpp(18,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

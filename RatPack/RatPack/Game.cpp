@@ -1,7 +1,10 @@
 #include "Game.h"
+
 #include <iostream>
 
-Game::Game() : m_window{ sf::VideoMode{ sf::Vector2u{800U, 600U}, 32U }, "SFML Game 3.0" }, m_DELETEexitGame{false} //when true game will exit
+static float const FPS{ 60.0f };
+
+Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_height }, 32 ), "RatPack", sf::Style::Default), m_DELETEexitGame{ false } //when true game will exit
 {
 	setupTexts(); // load font 
 	setupSprites(); // load texture
@@ -22,19 +25,19 @@ void Game::run()
 	sf::Time timePerFrame = sf::seconds(1.0f / fps); // 60 fps
 	while (m_window.isOpen())
 	{
-		processEvents(); // as many as possible
+		processEvents(timePerFrame.asMilliseconds()); // as many as possible
 		timeSinceLastUpdate += clock.restart();
 		while (timeSinceLastUpdate > timePerFrame)
 		{
 			timeSinceLastUpdate -= timePerFrame;
-			processEvents(); // at least 60 fps
+			processEvents(timePerFrame.asMilliseconds()); // at least 60 fps
 			update(timePerFrame); //60 fps
 		}
 		render(); // as many as possible
 	}
 }
 
-void Game::processEvents()
+void Game::processEvents(double dt)
 {
 	while (const std::optional newEvent = m_window.pollEvent())
 	{
@@ -44,7 +47,7 @@ void Game::processEvents()
 		}
 		if (newEvent->is<sf::Event::KeyPressed>()) //user pressed a key
 		{
-			processKeys(newEvent);
+			processKeys(newEvent, dt);
 		}
 		if (newEvent->is<sf::Event::MouseButtonReleased>()) {
 			m_menu.checkIfPressed(m_window);
@@ -52,7 +55,7 @@ void Game::processEvents()
 	}
 }
 
-void Game::processKeys(const std::optional<sf::Event> t_event)
+void Game::processKeys(const std::optional<sf::Event> t_event, double dt)
 {
 	const sf::Event::KeyPressed *newKeypress = t_event->getIf<sf::Event::KeyPressed>();
 	if (sf::Keyboard::Key::Escape == newKeypress->code)
@@ -60,7 +63,7 @@ void Game::processKeys(const std::optional<sf::Event> t_event)
 		m_DELETEexitGame = true; 
 	}
 
-	m_player.move(t_event);
+	m_player.move(t_event, dt);
 }
 
 void Game::checkKeyboardState()
@@ -78,15 +81,41 @@ void Game::update(sf::Time t_deltaTime)
 	{
 		m_window.close();
 	}
+
+	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
+
+	for (int i = 0; i < MAX_RATS; i++)
+	{
+		m_rats->move(t_deltaTime.asMilliseconds());
+
+		if (m_player.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+		{
+			m_rats[i].becomePlayerRat();
+		}
+		else if (m_enemy.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+		{
+			m_rats[i].becomeEnemyRat();
+		}
+	}*/
 }
 
 void Game::render()
 {
 	m_window.clear(ULTRAMARINE);
 
+	m_menu.render(m_window);
+
+	m_window.draw(m_player.getSprite());
+	/*m_window.draw(m_enemy.getSprite());
+
+	for (int i = 0; i < MAX_RATS; i++)
+	{
+		m_window.draw(m_rats[i].getSprite());
+	}*/
+	
 	/*m_window.draw(m_DELETElogoSprite);
 	m_window.draw(m_DELETEwelcomeMessage);*/
-	m_menu.render(m_window);
+
 	m_window.display();
 }
 
