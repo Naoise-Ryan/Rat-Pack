@@ -14,10 +14,19 @@
 
 #include <iostream>
 #include "Game.h"
+#include "Rat.h"
+
+sf::Texture Rat::m_Texture;
 
 int main()
 {
 	srand(time(nullptr));
+
+	if (!Rat::m_Texture.loadFromFile("ASSETS\\IMAGES\\rat.png"))
+	{
+		// simple error message if previous call fails
+		std::cout << "problem loading rat" << std::endl;
+	}
 
 	Game game;
 	game.run();

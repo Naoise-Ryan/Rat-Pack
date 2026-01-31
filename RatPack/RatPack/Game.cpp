@@ -6,9 +6,20 @@ static float const FPS{ 60.0f };
 
 Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_height }, 32 ), "RatPack", sf::Style::Default), m_DELETEexitGame{ false } //when true game will exit
 {
+	/*m_rats.resize(MAX_RATS);
+	m_players.resize(m_numPlayers);
+	m_enemys.resize(m_numEnemys);
+
+	for (auto& rat : m_rats)
+	{
+		rat.loadAssets();
+	}*/
+
 	for (int i = 0; i < MAX_RATS; i++)
 	{
-		m_rats[i].loadAssets();
+		Rat tempRat;
+		tempRat.loadAssets();
+		m_rats.push_back(tempRat);
 	}
 
 	m_menu.initialise();
@@ -72,9 +83,9 @@ void Game::processKeys(const std::optional<sf::Event> t_event, double dt)
 		m_DELETEexitGame = true; 
 	}
 	if (!m_menu.isMenuActive()) {
-		for (int i = 0; i < m_numPlayers; i++)
+		for (int i = 0; i < m_players.size(); i++)
 		{
-			m_players[i].rotationInput(t_event);
+			m_players.at(i).rotationInput(t_event);
 		}
 	}
 }
@@ -97,38 +108,36 @@ void Game::update(sf::Time t_deltaTime)
 
 	if (!m_menu.isMenuActive()) 
 	{
-		for (int i = 0; i < m_numPlayers; i++)
+		for (int i = 0; i < m_players.size(); i++)
 		{
-			m_players[i].move(t_deltaTime.asMilliseconds());
+			m_players.at(i).move(t_deltaTime.asMilliseconds());
 		}
 
-		for (int i = 0; i < m_numEnemys; i++)
+		for (int i = 0; i < m_enemys.size(); i++)
 		{
-			m_enemys[i].enemyUpdate(t_deltaTime.asMilliseconds());
+			m_enemys.at(i).enemyUpdate(t_deltaTime.asMilliseconds());
 		}
 
-		for (int i = 0; i < m_numRats; i++)
+		for (int i = 0; i < m_rats.size(); i++)
 		{
-			m_rats[i].Update(t_deltaTime.asMilliseconds());
+			m_rats.at(i).Update(t_deltaTime.asMilliseconds());
 
-			for (int i = 0; i < m_numPlayers; i++)
+			for (int i = 0; i < m_players.size(); i++)
 			{
 				if (m_players[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
 				{
 					//take rat away from rats
 					//add rat to players
-					m_numPlayers = m_numPlayers + 1;
 					break;
 				}
 			}
-			for (int i = 0; i < m_numEnemys; i++)
+			for (int i = 0; i < m_enemys.size(); i++)
 			{
 				if (m_enemys[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
 				{
 					//take rat away from rats
 					//add rat to enemys
 					//m_rats.erase(i);
-					m_numEnemys = m_numEnemys + 1;
 					break;
 				}
 			}
@@ -146,19 +155,21 @@ void Game::render()
 	{
 		m_window.draw(m_gameBgSprite);
 
-		for (int i = 0; i < m_numRats; i++)
+		for (int i = 0; i < m_rats.size(); i++)
 		{
-			m_window.draw(m_rats[i].getSprite());
+			std::cout << i;
+			std::cout << "\n";
+			m_window.draw(m_rats.at(i).getSprite());
 		}
 
-		for (int i = 0; i < m_numEnemys; i++)
+		for (int i = 0; i < m_enemys.size(); i++)
 		{
-			m_window.draw(m_enemys[i].getSprite());
+			m_window.draw(m_enemys.at(i).getSprite());
 		}
 
-		for (int i = 0; i < m_numPlayers; i++)
+		for (int i = 0; i < m_players.size(); i++)
 		{
-			m_window.draw(m_players[i].getSprite());
+			m_window.draw(m_players.at(i).getSprite());
 		}
 	}
 

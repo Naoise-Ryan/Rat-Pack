@@ -1,14 +1,36 @@
-﻿  Game.cpp
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(67,71): warning C4100: 'dt': unreferenced parameter
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Rat-Pack\RatPack\RatPack\Game.cpp(110,12):
-      see declaration of 'i'
+﻿  Rat.cpp
+C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Rat.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
+      see declaration of 'std::runtime_error'
+      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
   
-C:\Rat-Pack\RatPack\RatPack\Game.cpp(122,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Rat-Pack\RatPack\RatPack\Game.cpp(110,12):
-      see declaration of 'i'
-  
-  main.cpp
-C:\Rat-Pack\RatPack\RatPack\main.cpp(20,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(6,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(8,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(8,19): warning C4244:         with
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(8,19): warning C4244:         [
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(8,19): warning C4244:             T=float
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(8,19): warning C4244:         ]
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(9,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(9,19): warning C4244:         with
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(9,19): warning C4244:         [
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(9,19): warning C4244:             T=float
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(9,19): warning C4244:         ]
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(23,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(26,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(28,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(28,19): warning C4244:         with
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(28,19): warning C4244:         [
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(28,19): warning C4244:             T=float
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(28,19): warning C4244:         ]
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(29,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(29,19): warning C4244:         with
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(29,19): warning C4244:         [
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(29,19): warning C4244:             T=float
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(29,19): warning C4244:         ]
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(40,22): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(51,24): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(59,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Rat-Pack\RatPack\RatPack\Rat.cpp(60,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

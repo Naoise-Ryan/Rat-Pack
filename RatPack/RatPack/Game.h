@@ -41,11 +41,8 @@ private:
 	sf::Font m_jerseyFont;// font used by message
 
 	const static int MAX_RATS = 20;
-	int m_numRats = MAX_RATS;
 	std::vector<Rat> m_rats;
-	int m_numPlayers = 1;
 	std::vector<Player> m_players;
-	int m_numEnemys = 1;
 	std::vector<Enemy> m_enemys;
 	
 	bool m_DELETEexitGame; // control exiting game

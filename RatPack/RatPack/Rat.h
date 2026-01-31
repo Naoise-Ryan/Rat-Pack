@@ -16,6 +16,7 @@ public:
 	void boundaryCheck();
 	void rotate();
 
+	static sf::Texture m_Texture;
 	sf::Sprite getSprite() { return m_sprite; }
 
 protected:
@@ -33,6 +34,6 @@ protected:
 	bool m_rotating = false;
 	int m_rotationDir = 0;
 
-	sf::Texture m_Texture;
+	
 	sf::Sprite m_sprite{ m_Texture };
 };
