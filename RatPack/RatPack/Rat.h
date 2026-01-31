@@ -9,7 +9,7 @@ class Rat
 {
 public:
 	Rat();
-	void loadAssets() {}
+	void loadAssets();
 
 	void Update(double dt);
 	void move(double dt);

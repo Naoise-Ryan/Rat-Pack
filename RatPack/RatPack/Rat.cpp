@@ -2,7 +2,25 @@
 
 Rat::Rat()
 {
-	loadAssets();
+	int startRotation = rand() % 360;
+	m_sprite.setRotation(sf::Angle(sf::degrees(startRotation)));
+
+	m_pos.x = rand() % screen.s_width;
+	m_pos.y = rand() % screen.s_height;
+}
+
+void Rat::loadAssets()
+{
+	if (!m_Texture.loadFromFile("ASSETS\\IMAGES\\rat.png"))
+	{
+		// simple error message if previous call fails
+		std::cout << "problem loading rat" << std::endl;
+	}
+
+	m_sprite.setTexture(m_Texture, true);// to reset the dimensions of texture
+	m_sprite.setPosition(m_pos);
+
+	m_timeTillRotation = rand() % m_TIME_TILL_ROTATION;
 
 	int startRotation = rand() % 360;
 	m_sprite.setRotation(sf::Angle(sf::degrees(startRotation)));

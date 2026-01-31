@@ -10,6 +10,11 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 	setupSprites(); // load texture
 	setupAudio(); // load sounds
 
+	for (int i = 0; i < MAX_RATS; i++)
+	{
+		m_rats[i].loadAssets();
+	}
+
 	m_menu.initialise();
 }
 
@@ -85,29 +90,28 @@ void Game::update(sf::Time t_deltaTime)
 		m_window.close();
 	}
 
-	if (!m_menu.isMenuActive()) {
-	m_player.move(t_deltaTime.asMilliseconds());
+	if (!m_menu.isMenuActive()) 
+	{
+		m_player.move(t_deltaTime.asMilliseconds());
 
-	m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
+		m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
 
 		m_player.move(t_deltaTime.asMilliseconds());
+
+		for (int i = 0; i < MAX_RATS; i++)
+		{
+			m_rats[i].Update(t_deltaTime.asMilliseconds());
+
+			if (m_player.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+			{
+				m_rats[i].becomePlayerRat();
+			}
+			else if (m_enemy.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+			{
+				m_rats[i].becomeEnemyRat();
+			}
+		}
 	}
-	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
->>>>>>> f996c8dc1f5df249fb679324cb5d0eba1e1c6b3c
-
-	/*for (int i = 0; i < MAX_RATS; i++)
-	{
-		m_rats->move(t_deltaTime.asMilliseconds());
-
-		if (m_player.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
-		{
-			m_rats[i].becomePlayerRat();
-		}
-		else if (m_enemy.getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
-		{
-			m_rats[i].becomeEnemyRat();
-		}
-	}*/
 }
 
 void Game::render()
@@ -117,18 +121,14 @@ void Game::render()
 	m_menu.render(m_window);
 
 	if (!m_menu.isMenuActive()) {
-		m_window.draw(m_player.getSprite());
-		m_window.draw(m_enemy.getSprite());
+		for (int i = 0; i < MAX_RATS; i++)
+		{
+			m_window.draw(m_rats[i].getSprite());
+		}
 
+		m_window.draw(m_enemy.getSprite());
 		m_window.draw(m_player.getSprite());
 	}
-	/*m_window.draw(m_enemy.getSprite());
->>>>>>> f996c8dc1f5df249fb679324cb5d0eba1e1c6b3c
-
-	/*for (int i = 0; i < MAX_RATS; i++)
-	{
-		m_window.draw(m_rats[i].getSprite());
-	}*/
 
 	m_window.display();
 }
@@ -152,7 +152,7 @@ void Game::setupSprites()
 {
 	//if (!m_DELETElogoTexture.loadFromFile("ASSETS\\IMAGES\\SFML-LOGO.png"))
 	//{
-	//	// simple error message if previous call fails
+	//	 simple error message if previous call fails
 	//	std::cout << "problem loading logo" << std::endl;
 	//}
 	//
