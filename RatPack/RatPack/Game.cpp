@@ -111,7 +111,7 @@ void Game::update(sf::Time t_deltaTime)
 			m_enemys[i].enemyUpdate(t_deltaTime.asMilliseconds());
 		}
 
-		for (int i = 0; i < MAX_RATS; i++)
+		for (int i = 0; i < m_numRats; i++)
 		{
 			m_rats[i].Update(t_deltaTime.asMilliseconds());
 
@@ -120,6 +120,7 @@ void Game::update(sf::Time t_deltaTime)
 				if (m_players[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
 				{
 					m_numPlayers = m_numPlayers + 1;
+					break;
 				}
 			}
 			for (int i = 0; i < m_numEnemys; i++)
@@ -128,6 +129,7 @@ void Game::update(sf::Time t_deltaTime)
 				{
 					//m_rats.erase(i);
 					m_numEnemys = m_numEnemys + 1;
+					break;
 				}
 			}
 		}
@@ -144,7 +146,7 @@ void Game::render()
 	{
 		m_window.draw(m_gameBgSprite);
 
-		for (int i = 0; i < MAX_RATS; i++)
+		for (int i = 0; i < m_numRats; i++)
 		{
 			m_window.draw(m_rats[i].getSprite());
 		}

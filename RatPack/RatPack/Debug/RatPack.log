@@ -1,3 +1,11 @@
 ﻿  Game.cpp
 C:\Rat-Pack\RatPack\RatPack\Game.cpp(71,71): warning C4100: 'dt': unreferenced parameter
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(118,13): warning C4456: declaration of 'i' hides previous local declaration
+      C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,12):
+      see declaration of 'i'
+  
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(126,13): warning C4456: declaration of 'i' hides previous local declaration
+      C:\Rat-Pack\RatPack\RatPack\Game.cpp(114,12):
+      see declaration of 'i'
+  
   RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe
