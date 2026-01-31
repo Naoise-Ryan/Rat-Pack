@@ -7,6 +7,7 @@
 // warning C4275 : non dll - interface class 'std::runtime_error' used as base for dll - interface class 'sf::Exception'
 
 #include "ScreenSize.h"
+#include "global.h"
 #include "Menu.h"
 
 #include "Player.h"
@@ -31,12 +32,7 @@ private:
 	void checkKeyboardState();
 	void update(sf::Time t_deltaTime);
 	void render();
-	
-	void setupTexts();
-	void setupSprites();
-	void setupAudio();
 
-	
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_jerseyFont;// font used by message
 

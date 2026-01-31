@@ -12,7 +12,8 @@ public:
 
 	void enemyUpdate(double dt) { Update(dt); }
 
-	sf::Sprite getSprite() { return m_sprite; }
+	void setSprite(sf::Texture texture);
+	sf::Sprite getSprite() { return m_sprite; };
 
 private:
 };

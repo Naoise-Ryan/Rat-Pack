@@ -2,11 +2,11 @@
 
 void Player::loadAssets()
 {
-	if (!m_Texture.loadFromFile("ASSETS\\IMAGES\\playerRat.png"))
-	{
-		// simple error message if previous call fails
-		std::cout << "problem loading rat" << std::endl;
-	}
+	//if (!m_Texture.loadFromFile("ASSETS\\IMAGES\\playerRat.png"))
+	//{
+	//	// simple error message if previous call fails
+	//	std::cout << "problem loading rat" << std::endl;
+	//}
 	
 	m_sprite.setTexture(m_Texture,true);// to reset the dimensions of texture
 	m_sprite.setPosition(m_pos);
@@ -47,4 +47,9 @@ void Player::move(double dt)
 	m_sprite.setRotation(m_rotation);
 
 	//std::cout << "x: " << m_pos.x << " y: " << m_pos.y << "\n";
+}
+
+void Player::setSprite(sf::Texture texture)
+{
+	m_sprite.setTexture(m_Texture, true);
 }

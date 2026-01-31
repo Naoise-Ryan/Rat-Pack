@@ -13,6 +13,7 @@ public:
 	void rotationInput(const std::optional<sf::Event> t_event);
 	void move(double dt);
 
+	void setSprite(sf::Texture texture);
 	sf::Sprite getSprite() { return m_sprite; }
 
 private:

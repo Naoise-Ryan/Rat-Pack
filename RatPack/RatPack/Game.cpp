@@ -22,6 +22,23 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 		m_rats.push_back(tempRat);
 	}
 
+	Globals globals;
+	if (!globals.enemyTexture.loadFromFile("ASSETS\\IMAGES\\enemyRat.png")) 
+	{
+		std::cout << "Problem loading enemy rat" << std::endl;
+	}
+	Enemy tempEnemy;
+	tempEnemy.setSprite(globals.enemyTexture);
+	m_enemys.push_back(tempEnemy);
+
+	if (!globals.playerTexture.loadFromFile("ASSETS\\IMAGES\\playerRat.png"))
+	{
+		std::cout << "Problem loading player rat" << std::endl;
+	}
+	Player tempPlayer;
+	tempPlayer.setSprite(globals.playerTexture);
+	m_players.push_back(tempPlayer);
+
 	m_menu.initialise();
 
 	if (!m_gameBgTexture.loadFromFile("ASSETS\\IMAGES\\game_bg_image.png")) {
