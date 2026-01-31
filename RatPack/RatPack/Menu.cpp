@@ -65,17 +65,22 @@ void Menu::checkIfPressed(sf::RenderWindow& window)
 
 	if (menuActive) {
 		sf::FloatRect startButtonZone = m_startButton.getGlobalBounds();
-		sf::FloatRect controlButtonZone = m_startButton.getGlobalBounds();
-		sf::FloatRect endButtonZone = m_startButton.getGlobalBounds();
+		sf::FloatRect controlButtonZone = m_controlButton.getGlobalBounds();
+		sf::FloatRect endButtonZone = m_exitButton.getGlobalBounds();
 
 		if (startButtonZone.contains(mousePosWindow)) {
-			std::cout << "start";
+			menuActive = false;
 		}
 		if (controlButtonZone.contains(mousePosWindow)) {
 			std::cout << "controls";
 		}
 		if (endButtonZone.contains(mousePosWindow)) {
-			std::cout << "end";
+			window.close();
 		}
 	}
+}
+
+bool Menu::isMenuActive()
+{
+	return menuActive;
 }

@@ -8,6 +8,7 @@ public:
 	void initialise();
 	void render(sf::RenderWindow& t_window);
 	void checkIfPressed(sf::RenderWindow& window);
+	bool isMenuActive();
 protected:
 private:
 	bool menuActive;
