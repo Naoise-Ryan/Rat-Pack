@@ -23,7 +23,7 @@ protected:
 	ScreenSize screen;
 
 	sf::Vector2f m_pos{0.0f, 0.0f};
-	float m_speed{ 5.0f };
+	float m_speed{ 600.0f };
 
 	sf::Angle m_rotation{ sf::degrees(0.0f) };
 	float m_rotationTimer{ 150.0f };
