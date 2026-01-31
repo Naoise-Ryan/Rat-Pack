@@ -38,7 +38,18 @@ void Menu::render(sf::RenderWindow& t_window)
 	}
 }
 
-void Menu::checkIfPressed(sf::Event t_newEvent, sf::RenderWindow& window)
+void Menu::checkIfPressed(sf::RenderWindow& window)
 {
-	std::cout << "test" << std::endl;
+	// Get mouse position in pixels relative to the window
+	sf::Vector2i pixelPos = sf::Mouse::getPosition(window);
+
+	sf::Vector2f mousePosWindow = window.mapPixelToCoords(pixelPos);
+
+	if (menuActive) {
+		sf::FloatRect startButtonZone = m_startButton.getGlobalBounds();
+
+		if (startButtonZone.contains(mousePosWindow)) {
+			std::cout << "a";
+		}
+	}
 }
