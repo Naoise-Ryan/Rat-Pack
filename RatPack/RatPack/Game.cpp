@@ -9,6 +9,8 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 	setupTexts(); // load font 
 	setupSprites(); // load texture
 	setupAudio(); // load sounds
+
+	m_menu.initialise();
 }
 
 Game::~Game()
@@ -98,6 +100,8 @@ void Game::render()
 {
 	m_window.clear(ULTRAMARINE);
 
+	m_menu.render(m_window);
+
 	m_window.draw(m_player.getSprite());
 	/*m_window.draw(m_enemy.getSprite());
 
@@ -106,6 +110,9 @@ void Game::render()
 		m_window.draw(m_rats[i].getSprite());
 	}*/
 	
+	/*m_window.draw(m_DELETElogoSprite);
+	m_window.draw(m_DELETEwelcomeMessage);*/
+
 	m_window.display();
 }
 
