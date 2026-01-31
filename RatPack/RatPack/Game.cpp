@@ -85,11 +85,11 @@ void Game::update(sf::Time t_deltaTime)
 		m_window.close();
 	}
 
+	if (!m_menu.isMenuActive()) {
 	m_player.move(t_deltaTime.asMilliseconds());
 
 	m_enemy.enemyUpdate(t_deltaTime.asMilliseconds());
 
-	if (!m_menu.isMenuActive()) {
 		m_player.move(t_deltaTime.asMilliseconds());
 	}
 	/*m_enemy.enemyMove(t_deltaTime.asMilliseconds());
@@ -116,10 +116,10 @@ void Game::render()
 
 	m_menu.render(m_window);
 
-	m_window.draw(m_player.getSprite());
-	m_window.draw(m_enemy.getSprite());
-
 	if (!m_menu.isMenuActive()) {
+		m_window.draw(m_player.getSprite());
+		m_window.draw(m_enemy.getSprite());
+
 		m_window.draw(m_player.getSprite());
 	}
 	/*m_window.draw(m_enemy.getSprite());

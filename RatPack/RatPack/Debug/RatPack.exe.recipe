@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Rat-Pack\RatPack\Debug\RatPack.exe</FullPath>
+      <FullPath>C:\Users\gamejam\Desktop\Rat-Pack\RatPack\Debug\RatPack.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Rat-Pack\RatPack\RatPack\ASSETS\IMAGES\SFML-LOGO.png</FullPath>
+      <FullPath>C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\ASSETS\IMAGES\SFML-LOGO.png</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
