@@ -3,6 +3,7 @@
 Menu::Menu() {
 	menuActive = true;
 	controlMenuActive = false;
+	Music1();
 	//Size Dimensions
 	m_startButtonSize = { 255, 120 };
 	m_startButtonPosition = { 282, 405 };
@@ -93,6 +94,7 @@ void Menu::checkIfPressed(sf::RenderWindow& window)
 
 			if (startButtonZone.contains(mousePosWindow)) {
 				menuActive = false;
+				Music2();
 			}
 			if (controlButtonZone.contains(mousePosWindow)) {
 				controlMenuActive = true;
@@ -114,4 +116,28 @@ void Menu::checkIfPressed(sf::RenderWindow& window)
 bool Menu::isMenuActive()
 {
 	return menuActive;
+}
+
+void Menu::Music1()
+{
+	if (!m_music1.openFromFile("ASSETS\\AUDIO\\title.wav"))
+	{
+		std::cout << "Error loading menu theme" << std::endl;
+	}
+	else {
+		m_music1.play();
+		m_music2.stop();
+	}
+}
+
+void Menu::Music2()
+{
+	if (!m_music2.openFromFile("ASSETS\\AUDIO\\game.wav"))
+	{
+		std::cout << "Error loading menu theme" << std::endl;
+	}
+	else {
+		m_music2.play();
+		m_music1.stop();
+	}
 }

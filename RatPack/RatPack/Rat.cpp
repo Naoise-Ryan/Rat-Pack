@@ -111,7 +111,7 @@ void Rat::rotate()
 {
 	if (m_rotationDir == 0)
 	{
-		m_rotation += sf::degrees(1.0);
+		m_rotation += sf::degrees(1.15);
 		if (m_rotation.asDegrees() == 360.0)
 		{
 			m_rotation = sf::degrees(0.0f);
@@ -119,7 +119,7 @@ void Rat::rotate()
 	}
 	else
 	{
-		m_rotation -= sf::degrees(1.0);
+		m_rotation -= sf::degrees(1.15);
 		if (m_rotation.asDegrees() == 0.0)
 		{
 			m_rotation = sf::degrees(359.0f);

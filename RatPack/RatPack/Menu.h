@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #pragma once
 class Menu {
 public:
@@ -9,6 +10,12 @@ public:
 	void render(sf::RenderWindow& t_window);
 	void checkIfPressed(sf::RenderWindow& window);
 	bool isMenuActive();
+
+
+	sf::Music m_music1;
+	sf::Music m_music2;
+	void Music1();
+	void Music2();
 protected:
 private:
 	bool menuActive;
@@ -39,4 +46,5 @@ private:
 	sf::RectangleShape m_goBackButton;
 	sf::Vector2f m_goBackButtonSize;
 	sf::Vector2f m_goBackButtonPosition;
+
 };
