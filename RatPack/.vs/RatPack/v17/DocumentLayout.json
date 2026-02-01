@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Rat-Pack\\RatPack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2B1D5AA-955C-4365-A1F1-A641AD6434B8}|RatPack\\RatPack.vcxproj|solutionrelative:RatPack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -63,11 +67,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Menu.h",
+              "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Menu.h",
+              "RelativeDocumentMoniker": "RatPack\\Menu.h",
+              "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Menu.h",
+              "RelativeToolTip": "RatPack\\Menu.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-01T13:55:02.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "xutility",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
               "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
@@ -75,12 +92,11 @@
               "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
               "ViewState": "AgIAAAwUAAAAAAAAAAAEwB8UAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-01T13:24:50.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T13:24:50.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "global.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\global.h",
               "RelativeDocumentMoniker": "RatPack\\global.h",
@@ -92,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
@@ -104,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Angle.hpp",
               "DocumentMoniker": "C:\\SFML-3.0.0\\include\\SFML\\System\\Angle.hpp",
               "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\System\\Angle.hpp",
@@ -116,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Enemy.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.h",
               "RelativeDocumentMoniker": "RatPack\\Enemy.h",
@@ -124,12 +140,11 @@
               "RelativeToolTip": "RatPack\\Enemy.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T14:06:08.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:06:08.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ScreenSize.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\ScreenSize.h",
               "RelativeDocumentMoniker": "RatPack\\ScreenSize.h",
@@ -141,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.cpp",
               "RelativeDocumentMoniker": "RatPack\\Player.cpp",
@@ -149,25 +164,24 @@
               "RelativeToolTip": "RatPack\\Player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T12:31:28.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T12:31:28.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
               "RelativeDocumentMoniker": "RatPack\\Game.cpp",
               "ToolTip": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.cpp",
               "RelativeToolTip": "RatPack\\Game.cpp",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAawLMAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAawLMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-31T09:54:46.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Enemy.cpp",
               "RelativeDocumentMoniker": "RatPack\\Enemy.cpp",
@@ -175,12 +189,11 @@
               "RelativeToolTip": "RatPack\\Enemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T14:19:03.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:19:03.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Rat.cpp",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.cpp",
               "RelativeDocumentMoniker": "RatPack\\Rat.cpp",
@@ -188,12 +201,11 @@
               "RelativeToolTip": "RatPack\\Rat.cpp",
               "ViewState": "AgIAAHEAAAAAAAAAAAAmwIIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T14:19:37.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:19:37.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Player.h",
               "RelativeDocumentMoniker": "RatPack\\Player.h",
@@ -201,12 +213,11 @@
               "RelativeToolTip": "RatPack\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T11:49:39.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T11:49:39.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Rat.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Rat.h",
               "RelativeDocumentMoniker": "RatPack\\Rat.h",
@@ -214,12 +225,11 @@
               "RelativeToolTip": "RatPack\\Rat.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T11:49:20.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T11:49:20.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\Game.h",
               "RelativeDocumentMoniker": "RatPack\\Game.h",
@@ -227,12 +237,11 @@
               "RelativeToolTip": "RatPack\\Game.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAawCoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T09:57:14.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T09:57:14.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Rat-Pack\\RatPack\\RatPack\\main.cpp",
               "RelativeDocumentMoniker": "RatPack\\main.cpp",

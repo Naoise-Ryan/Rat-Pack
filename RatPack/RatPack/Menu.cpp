@@ -3,6 +3,7 @@
 Menu::Menu() {
 	menuActive = true;
 	controlMenuActive = false;
+	Music1();
 	//Size Dimensions
 	m_startButtonSize = { 255, 120 };
 	m_startButtonPosition = { 282, 405 };
@@ -16,19 +17,35 @@ Menu::Menu() {
 	m_goBackButtonSize = { 275, 115 };
 	m_goBackButtonPosition = { 18, 18 };
 
+
+	m_gameOverButtonSize = { 275, 115 };
+	m_gameOverButtonPosition = { 800, 18 };
+
 	m_menuBgPosition = { 0.0f, 0.0f };
+
+	m_gameOverBgPosition = { 0.0f, 0.0f };
+
 }
 
 void Menu::openMenu()
 {
 	menuActive = true;
 	controlMenuActive = false;
+	gameOverMenuActive = false;
 }
 void Menu::closeMenu()
 {
 	menuActive = false;
 	controlMenuActive = false;
+	gameOverMenuActive = false;
 }
+
+void Menu::openGameOver() {
+	menuActive = true;
+	gameOverMenuActive = true;
+	controlMenuActive = false;
+}
+
 void Menu::initialise()
 {
 	//Start Button
@@ -48,6 +65,9 @@ void Menu::initialise()
 	m_goBackButton.setSize(m_goBackButtonSize);
 	m_goBackButton.setPosition(m_goBackButtonPosition);
 
+	m_gameOverButton.setFillColor(sf::Color::Transparent);
+	m_gameOverButton.setSize(m_gameOverButtonSize);
+	m_gameOverButton.setPosition(m_gameOverButtonPosition);
 
 	if (!m_menuBgTexture.loadFromFile("ASSETS\\IMAGES\\menu_image.png")) {
 		std::cout << "Problem loading bg sprite" << std::endl;
@@ -60,20 +80,32 @@ void Menu::initialise()
 	}
 	m_controlBgSprite.setTexture(m_controlBgTexture, true);// to reset the dimensions of texture
 	m_controlBgSprite.setPosition(m_controlBgPosition);
+
+	if (!m_gameOverBgTexture.loadFromFile("ASSETS\\IMAGES\\game_over_image.png")) {
+		std::cout << "Problem loading bg sprite" << std::endl;
+	}
+	m_gameOverBgSprite.setTexture(m_gameOverBgTexture, true);// to reset the dimensions of texture
+	m_gameOverBgSprite.setPosition(m_gameOverBgPosition);
 }
 
 void Menu::render(sf::RenderWindow& t_window)
 {
 	if (menuActive) {
-		if (!controlMenuActive) {
-			t_window.draw(m_menuBgSprite);
-			t_window.draw(m_startButton);
-			t_window.draw(m_controlButton);
-			t_window.draw(m_exitButton);
+		if (gameOverMenuActive) {
+			t_window.draw(m_gameOverBgSprite);
+			t_window.draw(m_gameOverButton);
 		}
 		else {
-			t_window.draw(m_controlBgSprite);
-			t_window.draw(m_goBackButton);
+			if (!controlMenuActive) {
+				t_window.draw(m_menuBgSprite);
+				t_window.draw(m_startButton);
+				t_window.draw(m_controlButton);
+				t_window.draw(m_exitButton);
+			}
+			else {
+				t_window.draw(m_controlBgSprite);
+				t_window.draw(m_goBackButton);
+			}
 		}
 	}
 }
@@ -90,15 +122,20 @@ void Menu::checkIfPressed(sf::RenderWindow& window)
 			sf::FloatRect startButtonZone = m_startButton.getGlobalBounds();
 			sf::FloatRect controlButtonZone = m_controlButton.getGlobalBounds();
 			sf::FloatRect endButtonZone = m_exitButton.getGlobalBounds();
+			sf::FloatRect gameOverButtonZone = m_gameOverButton.getGlobalBounds();
 
 			if (startButtonZone.contains(mousePosWindow)) {
 				menuActive = false;
+				Music2();
 			}
 			if (controlButtonZone.contains(mousePosWindow)) {
 				controlMenuActive = true;
 			}
 			if (endButtonZone.contains(mousePosWindow)) {
 				window.close();
+			}
+			if (gameOverButtonZone.contains(mousePosWindow)) {
+				openMenu();
 			}
 		}
 		else {
@@ -114,4 +151,28 @@ void Menu::checkIfPressed(sf::RenderWindow& window)
 bool Menu::isMenuActive()
 {
 	return menuActive;
+}
+
+void Menu::Music1()
+{
+	if (!m_music1.openFromFile("ASSETS\\AUDIO\\title.wav"))
+	{
+		std::cout << "Error loading menu theme" << std::endl;
+	}
+	else {
+		m_music1.play();
+		m_music2.stop();
+	}
+}
+
+void Menu::Music2()
+{
+	if (!m_music2.openFromFile("ASSETS\\AUDIO\\game.wav"))
+	{
+		std::cout << "Error loading menu theme" << std::endl;
+	}
+	else {
+		m_music2.play();
+		m_music1.stop();
+	}
 }
