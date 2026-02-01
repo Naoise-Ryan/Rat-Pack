@@ -2,9 +2,9 @@
 
 #include <SFML/Graphics.hpp>
 
-struct Globals
-{
-public:
-	sf::Texture playerTexture;
-	sf::Texture enemyTexture;
-};
+//struct Globals
+//{
+//public:
+//	sf::Texture playerTexture;
+//	sf::Texture enemyTexture;
+//};

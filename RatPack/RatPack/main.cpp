@@ -18,6 +18,8 @@
 
 sf::Texture Rat::m_Texture;
 
+
+
 int main()
 {
 	srand(time(nullptr));

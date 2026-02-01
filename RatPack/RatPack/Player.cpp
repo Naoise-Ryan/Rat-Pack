@@ -1,4 +1,7 @@
 #include "Player.h"
+#include "Game.h"
+
+sf::Texture playerTexture;
 
 void Player::loadAssets()
 {
@@ -7,8 +10,13 @@ void Player::loadAssets()
 	//	// simple error message if previous call fails
 	//	std::cout << "problem loading rat" << std::endl;
 	//}
-	
-	m_sprite.setTexture(m_Texture,true);// to reset the dimensions of texture
+
+	if (!playerTexture.loadFromFile("ASSETS\\IMAGES\\playerRat.png"))
+	{
+		std::cout << "Problem loading player rat" << std::endl;
+	}
+
+	m_sprite.setTexture(playerTexture,true);// to reset the dimensions of texture
 	m_sprite.setPosition(m_pos);
 }
 
