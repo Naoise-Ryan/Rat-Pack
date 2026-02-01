@@ -40,7 +40,7 @@ private:
 	sf::Font m_jerseyFont;// font used by message
 
 	const static int MAX_RATS = 20;
-	std::vector<Rat> m_rats;
+	std::vector<Rat*> m_rats;
 	std::vector<Player> m_players;
 	std::vector<Enemy> m_enemys;
 	

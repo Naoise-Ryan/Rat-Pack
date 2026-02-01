@@ -1,20 +1,12 @@
 ﻿  Game.cpp
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(103,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(95,71): warning C4100: 'dt': unreferenced parameter
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(128,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(133,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(138,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(142,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(138,12):
-      see declaration of 'i'
-  
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(142,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(151,13): warning C4456: declaration of 'i' hides previous local declaration
-      C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(138,12):
-      see declaration of 'i'
-  
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(151,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(175,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(182,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gamejam\Desktop\Rat-Pack\RatPack\RatPack\Game.cpp(187,21): warning C4018: '<': signed/unsigned mismatch
-  RatPack.vcxproj -> C:\Users\gamejam\Desktop\Rat-Pack\RatPack\Debug\RatPack.exe
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(103,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(95,71): warning C4100: 'dt': unreferenced parameter
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(128,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(133,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(138,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(142,22): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(159,22): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(203,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(210,21): warning C4018: '<': signed/unsigned mismatch
+C:\Rat-Pack\RatPack\RatPack\Game.cpp(215,21): warning C4018: '<': signed/unsigned mismatch
+  RatPack.vcxproj -> C:\Rat-Pack\RatPack\Debug\RatPack.exe

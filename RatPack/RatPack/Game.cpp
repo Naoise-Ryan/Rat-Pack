@@ -17,8 +17,8 @@ Game::Game() : m_window(sf::VideoMode({ ScreenSize::s_width, ScreenSize::s_heigh
 
 	for (int i = 0; i < MAX_RATS; i++)
 	{
-		Rat tempRat;
-		tempRat.loadAssets();
+		Rat* tempRat = new Rat();
+		tempRat->loadAssets();
 		m_rats.push_back(tempRat);
 	}
 
@@ -137,26 +137,54 @@ void Game::update(sf::Time t_deltaTime)
 
 		for (int i = 0; i < m_rats.size(); i++)
 		{
-			m_rats.at(i).Update(t_deltaTime.asMilliseconds());
+			m_rats.at(i)->Update(t_deltaTime.asMilliseconds());
 
-			for (int i = 0; i < m_players.size(); i++)
+			for (int j = 0; j < m_players.size(); j++)
 			{
-				if (m_players[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+				if (m_players.at(j).getSprite().getGlobalBounds().findIntersection(m_rats.at(i)->getSprite().getGlobalBounds()))
 				{
 					//take rat away from rats
 					//add rat to players
+
+					Player tempPlayer;
+					tempPlayer.setPosition(m_rats.at(i)->getPosition());
+					m_players.push_back(tempPlayer);
+
+
+					//m_rats.erase(m_rats.begin() + i - 1);
+
 					break;
 				}
 			}
-			for (int i = 0; i < m_enemys.size(); i++)
+			for (int j = 0; j < m_enemys.size(); j++)
 			{
-				if (m_enemys[i].getSprite().getGlobalBounds().findIntersection(m_rats[i].getSprite().getGlobalBounds()))
+				if (m_enemys.at(j).getSprite().getGlobalBounds().findIntersection(m_rats.at(i)->getSprite().getGlobalBounds()))
 				{
 					//take rat away from rats
 					//add rat to enemys
 					//m_rats.erase(i);
+
+					m_rats.at(i)->shouldBeRemoved = true;
+
+					Enemy tempEnemy;
+					tempEnemy.setPosition(m_rats.at(i)->getPosition());
+					m_enemys.push_back(tempEnemy);
+
+					//m_rats.erase(m_rats.begin() + i - 1);
+
 					break;
 				}
+
+				if (m_rats.at(i)->shouldBeRemoved)
+				{
+					break;
+				}
+			}
+		}
+
+		for (int i = m_rats.size() - 1; i >= 0; --i) {
+			if (m_rats[i]->shouldBeRemoved) {
+				m_rats.erase(m_rats.begin() + i);
 			}
 		}
 	}
@@ -174,9 +202,9 @@ void Game::render()
 
 		for (int i = 0; i < m_rats.size(); i++)
 		{
-			std::cout << i;
-			std::cout << "\n";
-			m_window.draw(m_rats.at(i).getSprite());
+			//std::cout << i;
+			//std::cout << "\n";
+			m_window.draw(m_rats.at(i)->getSprite());
 		}
 
 		for (int i = 0; i < m_enemys.size(); i++)

@@ -18,6 +18,9 @@ public:
 
 	static sf::Texture m_Texture;
 	sf::Sprite getSprite() { return m_sprite; }
+	sf::Vector2f getPosition() { return m_pos; }
+
+	bool shouldBeRemoved = false;
 
 protected:
 	ScreenSize screen;
@@ -33,7 +36,6 @@ protected:
 	sf::Angle m_rotation{ sf::degrees(0.0f) };
 	bool m_rotating = false;
 	int m_rotationDir = 0;
-
 	
 	sf::Sprite m_sprite{ m_Texture };
 };
